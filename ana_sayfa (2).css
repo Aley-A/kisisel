@@ -1,0 +1,127 @@
+body {
+    background-color: #E7CBCB;
+}
+@keyframes hareketli {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(100%);
+                }
+               
+}
+.ön-kutu {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color:#A78295;
+    animation: hareketli 4s ease infinite;
+    margin: auto;
+}
+@keyframes change-language {
+    0% { content: 'Merhaba! ben'; }
+    33.33% { content: 'Hello! I am'; }
+    66.66% { content: 'Hallo! ich bin'; }
+    100% { content: 'Bonjour! je suis'; }
+}
+.yazi-animasyonu {
+    display: inline-block;
+    position: relative;
+}
+.yazi-animasyonu .yazi::after {
+    content: 'Merhaba!';
+    animation-name: change-language;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+p.a{
+    line-height: 30px;
+}
+.resim{
+    width: 300px;
+    height: 170px;
+    border:5px solid #331D2C;
+    border-radius: 20px;
+    float: left;
+}
+.resim img{
+    max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+.about-me-tr{
+    width: 300px;
+    height: 170px;
+    border: 5px solid #331D2C;
+    border-radius: 20px;
+    float: left;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.about-me-eng{
+    width: 300px;
+    height: 170px;
+    border: 5px solid #331D2C;
+    border-radius: 20px;
+    float: right;
+    font-size: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.about-me-deu{ 
+    width: 300px;
+    height: 170px;
+    border:5px solid #331D2C; 
+    border-radius: 10px;
+    float: right;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+   
+.uzun-ince-cizgi {
+    border: none;
+    border-top: 5px solid #99627A;
+    border-radius: 30px;
+    margin: 30px 0;
+}
+#uzun-ince-cizgi{
+    border: none;
+    border-top: 5px dotted #99627A;
+    border-radius: 30px;
+    margin: 30px 0;
+} 
+.ozgecmis {
+    width:1300px;
+    height: 200px;
+    border: 10px dotted #99627A;
+    border-radius: 10px;
+    margin-top: 400px;
+
+}
+.bosluk{
+    display: inline-block;
+    width: 10px;
+}
+.iletisim-kutusu{
+    width: 1300px;
+    height: 100px;
+    border: 10px none #A78295;
+    border-radius: 10px;
+    background-color:#A78295;
+}
+@keyframes change-contact {
+    0% { content: 'benimle iletişime geç!'; }
+    33.33% { content: 'contact me!'; }
+    66.66% { content: 'kontaktiere mich!'; }
+    100% { content: 'Contactez moi!'; }
+}
+.iletisim-animasyonu {
+    display: inline-block;
+    position: relative;
+}
+.iletisim-animasyonu .iletisim-yazi::after {
+    content: 'benimle iletişime geç!!';
+    animation-name: change-contact;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
