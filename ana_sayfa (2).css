@@ -1,24 +1,32 @@
 body {
-    background-color: #E7CBCB;
+    background-color:#DEB6AB;
 }
 @keyframes hareketli {
-                0% {
-                    transform: translateX(0);
-                }
-
-                100% {
-                    transform: translateX(100%);
-                }
-               
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(600px);
+    }
+    50% {
+        transform: translateX(1100px);
+    }
+    75% {
+        transform: translateX(600px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
 }
-.ön-kutu {
+.on-kutu {
     width: 100px;
     height: 100px;
     border-radius: 50px;
-    background-color:#A78295;
-    animation: hareketli 4s ease infinite;
+    background-color: #A78295;
+    animation: hareketli 10s ease infinite;
+    position: absolute;
     margin: auto;
-}
+} 
 @keyframes change-language {
     0% { content: 'Merhaba! ben'; }
     33.33% { content: 'Hello! I am'; }
@@ -36,7 +44,7 @@ body {
     animation-iteration-count: infinite;
 }
 p.a{
-    line-height: 30px;
+    height: 100px;
 }
 .resim{
     width: 300px;
@@ -44,6 +52,8 @@ p.a{
     border:5px solid #331D2C;
     border-radius: 20px;
     float: left;
+    box-shadow: 5px 10px 10px #331D2C;
+    overflow: hidden;
 }
 .resim img{
     max-width: 100%;
@@ -53,31 +63,36 @@ p.a{
 .about-me-tr{
     width: 300px;
     height: 170px;
-    border: 5px solid #331D2C;
+    border: 5px solid #864879;
     border-radius: 20px;
     float: left;
     font-size: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: 5px 5px 10px #331D2C;
+    color: #85586F;
 }
 .about-me-eng{
     width: 300px;
     height: 170px;
-    border: 5px solid #331D2C;
+    border: 5px solid #864879;
     border-radius: 20px;
     float: right;
     font-size: 15px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: 5px 5px 10px #331D2C;
+    color: #85586F;
 }
 .about-me-deu{ 
     width: 300px;
     height: 170px;
-    border:5px solid #331D2C; 
+    border:5px solid #864879; 
     border-radius: 10px;
     float: right;
     font-size: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: 5px 5px 10px #331D2C;
+    color: #85586F;
 }
-   
 .uzun-ince-cizgi {
     border: none;
     border-top: 5px solid #99627A;
@@ -88,15 +103,17 @@ p.a{
     border: none;
     border-top: 5px dotted #99627A;
     border-radius: 30px;
-    margin: 30px 0;
+    margin: 10px;
 } 
 .ozgecmis {
     width:1300px;
     height: 200px;
-    border: 10px dotted #99627A;
+    border: 5px solid #99627A;
     border-radius: 10px;
-    margin-top: 400px;
-
+    margin-top: 200px;
+    color: #331D2C;
+    font-style: oblique;
+    box-shadow: 5px 5px 10px #99627A;
 }
 .bosluk{
     display: inline-block;
@@ -108,6 +125,9 @@ p.a{
     border: 10px none #A78295;
     border-radius: 10px;
     background-color:#A78295;
+    text-align: center;
+    color: #331D2C;
+    box-shadow: 5px 5px 10px #A78295;
 }
 @keyframes change-contact {
     0% { content: 'benimle iletişime geç!'; }
